@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>wwaynonline</title>
+  <style>
+    @font-face {
+  font-family: "Benzin";
+  src: url("shirf/Benzin-Bold.woff2") format("woff2"),
+       url("shirf/Benzin-Bold.woff") format("woff"),
+       url("shirf/Benzin-ExtraBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}   header img {
+    width: 40px ;
+    height: 40px ;
+    text-align: center;
+    position: relative;
+    right: 20px;                                                            
+    top: 50%;
+    transform: translateY(-50%);
+}
+    body {
+      font-family: "Benzin", sans-serif;
+      margin: 0;
+      background:url("fon.png") no-repeat center center fixed ;
+    }   
+    header {
+      background:   #000000; 
+      border-radius: 0%;
+      color: #ffffff;       
+      padding: 20px;
+        
+      font-size: 30px;
+      display: flex ;
+      justify-content: center ;
+      align-items:center;
+      font-size :30px ;
+      position: relative;
+      
+    }
+    .container {
+      max-width: 600px;                                                                                                     
+      margin: 50px  ;
+      padding: 15px 0 ;
+    }
+    .product-list {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+    
+      gap: 20px;
+    }
+    .product {
+      
+      height: 460px ;
+      padding: 5px;
+      border-radius: 20px;
+      box-shadow: 0 0px 0px rgba(0,0,0,0.1);
+      text-align: center ;
+      font-size : 25px  ;
+      color : white ; 
+      flex-direction: column ;
+        justify-content: space-between ;
+        box-sizing: border-b    ox ;
+      
+    }
+    .product img {
+      width: 400px auto;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 7px;
+    }
+    .product h3 {
+      margin: 0px 0;
+    }
+    .product button {
+      margin-top: 10px;
+      padding: 10px 15px;
+      border: none;
+      background: #000000;
+      color: rgb(255, 255, 255) ;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size : 22px ;
+      font-family: "Benzin" ;
+    }
+    .product button:hover {
+      background: #c40202;
+    }
+    .zalupa h2{
+            text-align: center;
+            color: #ffffff;
+            font-size: 50px; 
+            margin-top: 10px;
+            
+        
+            
+
+
+
+
+    }
+    .music {
+
+            text-align: center;
+    }
+
+  </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">WWAYNONLINE</div>
+
+
+    
+    <img src="pngwing.com.png" alt="">
+
+</header>
+ 
+<div class="container">
+    <div class ="zalupa"> 
+
+        <h2>ITEMS</h2>
+    </div>      
+ 
+  <div class="product-list">
+    <div class="product">
+      <img src="crystal.png" alt="Товар" />
+      <h3>CRYSTAL CASTLES T SHIRT</h3>
+      <p>Цена: 2299 руб.</p>
+      <button>buy</button>
+    </div>
+
+    <div class="product">
+      <img src="hoodie.png" alt="Товар" />
+      <h3>ALICE GLASS HOODIE</h3>
+      <p>Цена: 4999 руб.</p>
+      <button>buy</button>
+    </div>
+
+    <div class="product"> 
+      <img src="hoooodie.png" alt="Товар" />
+      <h3>I _______ YOU HOODIE</h3>
+      <p>Цена: 4999 руб.</p>
+      <button>buy</button>
+      
+    
+    </div>
+
+    <div class="product"> 
+      <img src="lst.png" alt="Товар" />
+      <h3>ANXIERY X_x HOODIE</h3>
+      <p>Цена: 4999 руб.</p>
+      <button>buy</button>
+      
+    
+    </div>
+
+  </div> <div class="music"> 
+        <audio id="player">
+        <source src="www.mp3" type="audio/ogg; codecs=vorbis">
+        <source src="www.mp3" type="audio/mpeg">
+        Тег audio не поддерживается вашим браузером. 
+        <a href="so.mp3">Скачайте музыку</a>.
+     </audio>
+     <script>
+  document.addEventListener("click", function () {
+    document.getElementById("player").play();
+  }, { once: true });
+</script>
+      </div>
+</div>
+
+</body>
+</html>

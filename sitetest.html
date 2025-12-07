@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>wwaynonline</title>
+  <style>
+    @font-face {
+      font-family: "Benzin";
+      src: url("shirf/Benzin-Bold.woff2") format("woff2"),
+         url("shirf/Benzin-Bold.woff") format("woff"),
+         url("shirf/Benzin-ExtraBold.ttf") format("truetype");
+      font-weight: normal;
+      font-style: normal;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Benzin", sans-serif;
+      background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+      min-height: 100vh;
+      color: #fff;
+    }
+
+    header {
+      background: #2a2a2a;
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 2px solid #c40202;
+      position: relative;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .logo {
+      font-size: 48px;
+      font-weight: bold;
+      letter-spacing: 3px;
+      color: #ffffff;
+      margin-bottom: 15px;
+    }
+
+    header img {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      right: 25px;
+      top: 50%;
+      transform: translateY(-50%);
+      opacity: 0.9;
+      transition: opacity 0.3s;
+    }
+
+    header img:hover {
+      opacity: 1;
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 50px 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 48px;
+      color: #ffffff;
+      margin-bottom: 60px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      position: relative;
+      padding-bottom: 20px;
+    }
+
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100px;
+      height: 3px;
+      background: #c40202;
+      border-radius: 2px;
+    }
+
+    .product-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 35px;
+      justify-items: center;
+    }
+
+    .product {
+      background: linear-gradient(145deg, #333333, #2a2a2a);
+      height: 100%;
+      max-width: 320px;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.3s ease;
+      border: 1px solid #444;
+    }
+
+    .product:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 35px rgba(196, 2, 2, 0.3);
+      border-color: #c40202;
+    }
+
+    .product img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .product:hover img {
+      transform: scale(1.05);
+    }
+
+    .product h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #ffffff;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .product p {
+      font-size: 20px;
+      color: #c40202;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    .product button {
+      padding: 12px 25px;
+      border: 2px solid #c40202;
+      background: transparent;
+      color: #c40202;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 18px;
+      font-family: "Benzin", sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: all 0.3s ease;
+      font-weight: bold;
+    }
+
+    .product button:hover {
+      background: #c40202;
+      color: #ffffff;
+      box-shadow: 0 0 20px rgba(196, 2, 2, 0.5);
+    }
+
+    .music {
+      text-align: center;
+      margin-top: 60px;
+      padding-top: 40px;
+      border-top: 2px solid #444;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 30px 15px;
+      }
+
+      .section-title {
+        font-size: 32px;
+        margin-bottom: 40px;
+      }
+
+      .product-list {
+        gap: 25px;
+      }
+
+      .product {
+        max-width: 100%;
+      }
+
+      .logo {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">WWAYNONLINE</div>
+    <img src="pngwing.com.png" alt="">
+</header>
+
+<div class="container">
+    <h2 class="section-title">Items</h2>
+
+    <div class="product-list">
+      <div class="product">
+        <img src="crystal.png" alt="Товар" />
+        <h3>Crystal Castles T Shirt</h3>
+        <p>2299 руб.</p>
+        <button>Buy</button>
+      </div>
+
+      <div class="product">
+        <img src="hoodie.png" alt="Товар" />
+        <h3>Alice Glass Hoodie</h3>
+        <p>4999 руб.</p>
+        <button>Buy</button>
+      </div>
+
+      <div class="product">
+        <img src="hoooodie.png" alt="Товар" />
+        <h3>I _______ You Hoodie</h3>
+        <p>4999 руб.</p>
+        <button>Buy</button>
+      </div>
+
+      <div class="product">
+        <img src="lst.png" alt="Товар" />
+        <h3>Anxiety X Hoodie</h3>
+        <p>4999 руб.</p>
+        <button>Buy</button>
+      </div>
+    </div>
+
+    <div class="music">
+      <audio id="player">
+        <source src="so.mp3" type="audio/mpeg">
+        Тег audio не поддерживается вашим браузером. 
+        <a href="so.mp3">Скачайте музыку</a>.
+      </audio>
+      <script>
+        document.addEventListener("click", function () {
+          document.getElementById("player").play();
+        }, { once: true });
+      </script>
+    </div>
+</div>
+
+</body>
+</html>
